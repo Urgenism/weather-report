@@ -5,7 +5,7 @@ class Weather {
     this.state = state;
   }
 
-  //fetch weathe from API
+  //fetch weather from API
   async getWeather() {
     const response = await fetch(`http://api.wunderground.com/api/${this.apiKey}/conditions/q/${this.state}/${this.city}.json`);
 
